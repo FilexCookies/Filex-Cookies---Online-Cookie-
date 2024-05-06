@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filex Cookies - Online Cookie Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+      
+        body {
+            font-family: 'Comic Sans MS', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #89ABE3; 
+            animation: fadeInAnimation ease 2s; 
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        header img {
+            max-width: 200px; 
+            height: auto; 
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .cookie-box {
+            margin-bottom: 20px;
+        }
+
+        .cookie-box h3 {
+            color: #333;
+        }
+
+        .cookie-box p {
+            color: #777;
+        }
+
+        .cookie-box button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #3792CB;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cookie-box button:hover {
+            background-color: #196FAC; 
+        }
+
+        footer {
+            background-color: #F2F7FD; 
+            color: #666;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        footer a {
+            color: #3792CB; 
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://protoinfrastack-myfirstbucketb8884501-fnnzvxt2ee5v.s3.amazonaws.com/T4OtkqeOZtMqKAjWX1bP9QzcKuqRlDCodZic.png" alt="Filex Cookies Logo">
+        <h1>Welcome to Filex Cookies - Online Cookie Shop</h1>
+    </header>
+
+    <main>
+        
+        <section>
+            <h2>About Us</h2>
+            <p>Welcome to Filex Cookies - your one-stop destination for delicious cookie boxes! At Filex Cookies, we are passionate about creating delectable treats that delight your taste buds and brighten your day. Our bakers craft each box with love and attention to detail, using only the finest ingredients to ensure exceptional flavor and quality in every bite.</p>
+            <p>Whether you're craving classic chocolate chip cookies, indulgent double chocolate cookies, or festive holiday cookies, we've got something to satisfy your sweet tooth. With a commitment to creativity and innovation, we're always introducing new flavors and seasonal specialties to tantalize your palate.</p>
+            <p>At Filex Cookies, we believe that good food brings people together, and we're dedicated to creating memorable experiences for our customers. Whether you're treating yourself or sharing with loved ones, we strive to provide friendly service and a warm, welcoming atmosphere.</p>
+            <p>Thank you for choosing Filex Cookies - we look forward to serving you soon!</p>
+        </section>
+
+       
+        <section>
+            <h2>Our Cookie Boxes</h2>
+
+            <div class="cookie-box">
+                <h3><i class="fas fa-cookie"></i> Classic Cookie Box</h3>
+                <p>A delightful assortment of classic cookies.</p>
+                <p>Price: ₱200.00</p>
+                <button onclick="addToCart('Classic Cookie Box', 200.00)">Add to Cart</button>
+            </div>
+
+            <div class="cookie-box">
+                <h3><i class="fas fa-cookie"></i> Double Chocolate Cookie Box</h3>
+                <p>Indulge in rich and decadent double chocolate cookies.</p>
+                <p>Price: ₱250.00</p>
+                <button onclick="addToCart('Double Chocolate Cookie Box', 250.00)">Add to Cart</button>
+            </div>
+
+            <div class="cookie-box">
+                <h3><i class="fas fa-cookie"></i> Holiday Cookie Box</h3>
+                <p>Celebrate the season with a variety of festive holiday cookies.</p>
+                <p>Price: ₱220.00</p>
+                <button onclick="addToCart('Holiday Cookie Box', 220.00)">Add to Cart</button>
+            </div>
+
+            <div class="cookie-box">
+                <h3><i class="fas fa-cookie"></i> Lemon Glazed Cookie Box</h3>
+                <p>Refresh your palate with the tangy sweetness of lemon glazed cookies.</p>
+                <p>Price: ₱230.00</p>
+                <button onclick="addToCart('Lemon Glazed Cookie Box', 230.00)">Add to Cart</button>
+            </div>
+
+            <div class="cookie-box">
+                <h3><i class="fas fa-cookie"></i> Peanut Butter Cookie Box</h3>
+                <p>Satisfy your craving with the creamy goodness of peanut butter cookies.</p>
+                <p>Price: ₱210.00</p>
+                <button onclick="addToCart('Peanut Butter Cookie Box', 210.00)">Add to Cart</button>
+            </div>
+
+            <div class="cookie-box">
+                <h3><i class="fas fa-cookie"></i> Snickerdoodle Cookie Box</h3>
+                <p>Enjoy the warmth of cinnamon and sugar in every bite of snickerdoodle cookies.</p>
+                <p>Price: ₱240.00</p>
+                <button onclick="addToCart('Snickerdoodle Cookie Box', 240.00)">Add to Cart</button>
+            </div>
+
+            <div class="cookie-box">
+                <h3><i class="fas fa-cookie"></i> Oatmeal Raisin Cookie Box</h3>
+                <p>Experience the comforting flavors of oats and raisins in our oatmeal raisin cookie box.</p>
+                <p>Price: ₱220.00</p>
+                <button onclick="addToCart('Oatmeal Raisin Cookie Box', 220.00)">Add to Cart</button>
+            </div>
+
+            <div class="cookie-box">
+                <h3><i class="fas fa-cookie"></i> Almond Shortbread Cookie Box</h3>
+                <p>Indulge in the buttery goodness of almond shortbread cookies.</p>
+                <p>Price: ₱260.00</p>
+                <button onclick="addToCart('Almond Shortbread Cookie Box', 260.00)">Add to Cart</button>
+            </div>
+
+            <div class="cookie-box">
+                <h3><i class="fas fa-cookie"></i> Coconut Macaroon Cookie Box</h3>
+                <p>Transport yourself to the tropics with our coconut macaroon cookie box.</p>
+                <p>Price: ₱230.00</p>
+                <button onclick="addToCart('Coconut Macaroon Cookie Box', 230.00)">Add to Cart</button>
+            </div>
+
+            <div class="cookie-box">
+                <h3><i class="fas fa-cookie"></i> White Chocolate Cranberry Cookie Box</h3>
+                <p>Experience the perfect balance of sweet and tart in our white chocolate cranberry cookie box.</p>
+                <p>Price: ₱250.00</p>
+                <button onclick="addToCart('White Chocolate Cranberry Cookie Box', 250.00)">Add to Cart</button>
+            </div>
+
+            <div class="cookie-box">
+                <h3><i class="fas fa-cookie"></i> Mint Chocolate Chip Cookie Box</h3>
+                <p>Refresh your taste buds with the cool minty flavor of mint chocolate chip cookies.</p>
+                <p>Price: ₱240.00</p>
+                <button onclick="addToCart('Mint Chocolate Chip Cookie Box', 240.00)">Add to Cart</button>
+            </div>
+
+            <div class="cookie-box">
+                <h3><i class="fas fa-cookie"></i> Butterscotch Pecan Cookie Box</h3>
+                <p>Indulge in the rich and nutty flavors of butterscotch pecan cookies.</p>
+                <p>Price: ₱270.00</p>
+                <button onclick="addToCart('Butterscotch Pecan Cookie Box', 270.00)">Add to Cart</button>
+            </div>
+
+            <div class="cookie-box">
+                <h3><i class="fas fa-cookie"></i> Raspberry Linzer Cookie Box</h3>
+                <p>Enjoy the sweet and tangy combination of raspberry jam and almond flour in our raspberry linzer cookie box.</p>
+                <p>Price: ₱260.00</p>
+                <button onclick="addToCart('Raspberry Linzer Cookie Box', 260.00)">Add to Cart</button>
+            </div>
+
+            <div class="cookie-box">
+                <h3><i class="fas fa-cookie"></i> Chocolate Hazelnut Thumbprint Cookie Box</h3>
+                <p>Delight in the rich and nutty flavors of chocolate hazelnut thumbprint cookies.</p>
+                <p>Price: ₱280.00</p>
+                <button onclick="addToCart('Chocolate Hazelnut Thumbprint Cookie Box', 280.00)">Add to Cart</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        
+        <p>Follow us on <a href="https://www.facebook.com/profile.php?id=100084135769262" target="_blank">Facebook</a> for more updates!</p>
+        <p>&copy; 2024 Filex Cookies - Online Cookie Shop. All rights reserved.</p>
+    </footer>
+
+    <script>
+        
+        function addToCart(itemName, price) {
+            alert(itemName + " added to cart. Total: ₱" + price.toFixed(2));
+            
+        }
+    </script>
+</body>
+</html>
